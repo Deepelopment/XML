@@ -21,12 +21,13 @@ class ComposerXML
     /**
      * Check required library.
      *
-     * @param  Event $oEvent
+     * @param  Event $event
      * @return void
      * @throws ErrorException
      */
-    public static function prePackageInstall(Event $oEvent)
+    public static function prePackageInstall(Event $event)
     {
+        echo "prePackageInstall\n";###
         if (!function_exists('libxml_use_internal_errors')) {
             throw new ErrorException('"libxml" extension required!');
         }
@@ -35,12 +36,13 @@ class ComposerXML
     /**
      * Check required library.
      *
-     * @param  Event $oEvent
+     * @param  Event $event
      * @return void
      * @throws ErrorException
      */
-    public static function prePackageUpdate(Event $oEvent)
+    public static function prePackageUpdate(Event $event)
     {
+        echo "prePackageUpdate\n";###
         if (!function_exists('libxml_use_internal_errors123')) {
             throw new ErrorException('"libxml" extension required!');
         }

@@ -16,7 +16,7 @@ use Composer\Script\Event;
  *
  * @package Deepelopment
  */
-class Composer_XML
+class Composer
 {
     /**
      * Post install script.

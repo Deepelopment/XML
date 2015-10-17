@@ -6,9 +6,9 @@
  * @license Unlicense http://unlicense.org/
  */
 
- namespace Deepelopment\XML;
+namespace Deepelopment\XML;
 
- use RuntimeException;
+use RuntimeException;
 
 /**
  * Abstract class used to parse XML configure files.

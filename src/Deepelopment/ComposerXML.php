@@ -31,4 +31,18 @@ class ComposerXML
             throw new ErrorException('"libxml" extension required!');
         }
     }
+
+    /**
+     * Check required library.
+     *
+     * @param  Event $oEvent
+     * @return void
+     * @throws ErrorException
+     */
+    public static function prePackageUpdate(Event $oEvent)
+    {
+        if (!function_exists('libxml_use_internal_errors123')) {
+            throw new ErrorException('"libxml" extension required!');
+        }
+    }
 }

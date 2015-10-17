@@ -1,4 +1,15 @@
 {
+    "name": "deepelopment/xml",
+    "type": "library",
+    "description": "",
+    "keywords": [],
+    "license": "Unlicence",
+    "authors": [
+        {
+            "name": "deepeloper",
+            "homepage": "https://github.com/deepeloper"
+        }
+    ],
     "require": {
         "php": ">=5.3.1"
     },

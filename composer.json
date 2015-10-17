@@ -16,13 +16,13 @@
     "minimum-stability": "dev",
     "prefer-stable" : true,
     "autoload": {
-        "psr-4": {"Deepelopment\\":      "src/Deepelopment"    },
-        "psr-4": {"Deepelopment\\XML\\": "src/Deepelopment/XML"}
+        "psr-4": {"Deepelopment\\XML\\": "src/Deepelopment/XML"},
+        "psr-4": {"Deepelopment\\":      "src/Deepelopment"    }
     },
     "scripts": {
-        "pre-install-cmd":  "Deepeloper\\ComposerXML::prePackageInstall",
-        "pre-update-cmd":   "Deepeloper\\ComposerXML::prePackageUpdate",
-        "post-install-cmd": "Deepeloper\\ComposerXML::postPackageInstall",
-        "post-update-cmd":  "Deepeloper\\ComposerXML::postPackageUpdate"
+        "pre-install-cmd":  "Deepelopment\\ComposerXML::prePackageInstall",
+        "pre-update-cmd":   "Deepelopment\\ComposerXML::prePackageUpdate",
+        "post-install-cmd": "Deepelopment\\ComposerXML::postPackageInstall",
+        "post-update-cmd":  "Deepelopment\\ComposerXML::postPackageUpdate"
     }
 }

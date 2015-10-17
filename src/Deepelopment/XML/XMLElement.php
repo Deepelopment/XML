@@ -9,6 +9,7 @@
  namespace Deepelopment\XML;
 
  use RuntimeException;
+ use SimpleXMLElement;
 
 /**
  * XML element.
@@ -16,7 +17,7 @@
  * @package Deepelopment/XML
  * @author  deepeloper ({@see https://github.com/deepeloper})
  */
-class XMLElement extends SimpleXMLElement
+class Element extends SimpleXMLElement
 {
     /**
      * Returns element by path.
@@ -27,7 +28,7 @@ class XMLElement extends SimpleXMLElement
      *                Cast result to the specified type, see {@link
      *                http://ru2.php.net/manual/en/function.settype.php
      *                settype()}
-     * @return self
+     * @return mixed
      * @throws RuntimeException
      */
     public function getByPath($path, $default = NULL, $type = '')

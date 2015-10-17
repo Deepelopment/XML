@@ -1,8 +1,8 @@
 {
     "name": "deepelopment/xml",
     "type": "library",
-    "description": "",
-    "keywords": [],
+    "description": "\"linxml\" library extension, class used to parse XML configure files.",
+    "keywords": ["XML", "Parser"],
     "license": "Unlicence",
     "authors": [
         {

@@ -11,7 +11,7 @@
  use RuntimeException;
 
 /**
- * XML parser.
+ * Abstract class used to parse XML configure files.
  *
  * @package Deepelopment/XML
  * @author  deepeloper ({@see https://github.com/deepeloper})
@@ -23,7 +23,7 @@ abstract class Parser
      *
      * @var string
      */
-    protected $elementClassName = 'Deepelopment\\XML\\XMLElement';
+    protected $elementClassName = 'Deepelopment\\XML\\Element';
 
     /**
      * XML element

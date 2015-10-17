@@ -1,4 +1,4 @@
-# \"linxml\" library extension, class used to parse XML configure files.
+# "libxml" library extension, class used to parse XML configure files.
 
 ## Installation
 
@@ -19,3 +19,4 @@ Add to composer.json file
         "post-update-cmd":  "Deepelopment\\Composer_XML::postUpdate"
     }
     ```
+

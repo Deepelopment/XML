@@ -16,8 +16,7 @@
     "minimum-stability": "dev",
     "prefer-stable" : true,
     "autoload": {
-        "psr-4": {"Deepelopment\\XML\\": "src/Deepelopment/XML"},
-        "psr-4": {"Deepelopment\\":      "src/Deepelopment"    }
+        "psr-4": {"Deepelopment\\": "src/Deepelopment"}
     },
     "scripts": {
         "pre-install-cmd":  "Deepelopment\\Composer_XML::preInstall",

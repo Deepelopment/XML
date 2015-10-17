@@ -19,7 +19,7 @@ use Composer\Script\Event;
 class ComposerXML
 {
     /**
-     * Check required library.
+     * Pre package install script.
      *
      * @param  Event $event
      * @return void
@@ -27,22 +27,56 @@ class ComposerXML
      */
     public static function prePackageInstall(Event $event)
     {
-        echo "prePackageInstall\n";###
-        if (!function_exists('libxml_use_internal_errors')) {
-            throw new ErrorException('"libxml" extension required!');
-        }
+        self::checkRequirements($event);
     }
 
     /**
-     * Check required library.
+     * Pre package update script.
+     *
+     * @param  Event $event
+     * @return void
+     */
+    public static function prePackageUpdate(Event $event)
+    {
+        self::checkRequirements($event);
+    }
+
+    /**
+     * Post package install script.
+     *
+     * Checks required library.
+     *
+     * @param  Event $event
+     * @return void
+     */
+    public static function postPackageInstall(Event $event)
+    {
+        self::checkRequirements($event);
+    }
+
+    /**
+     * Post package update script.
+     *
+     * Checks required library.
+     *
+     * @param  Event $event
+     * @return void
+     */
+    public static function postPackageUpdate(Event $event)
+    {
+        self::checkRequirements($event);
+    }
+
+    /**
+     * Checks required library.
      *
      * @param  Event $event
      * @return void
      * @throws ErrorException
      */
-    public static function prePackageUpdate(Event $event)
+    protected static function checkRequirements(Event $event)
     {
-        echo "prePackageUpdate\n";###
+        echo "checkRequirements\n";###
         if (!function_exists('libxml_use_internal_errors123')) {
             throw new ErrorException('"libxml" extension required!');
         }

@@ -20,7 +20,9 @@
         "psr-4": {"Deepelopment\\XML\\": "src/Deepelopment/XML"}
     },
     "scripts": {
-        "pre-install-cmd": "Deepeloper\\ComposerXML::prePackageInstall",
-        "pre-update-cmd":  "Deepeloper\\ComposerXML::prePackageUpdate"
+        "pre-install-cmd":  "Deepeloper\\ComposerXML::prePackageInstall",
+        "pre-update-cmd":   "Deepeloper\\ComposerXML::prePackageUpdate",
+        "post-install-cmd": "Deepeloper\\ComposerXML::postPackageInstall",
+        "post-update-cmd":  "Deepeloper\\ComposerXML::postPackageUpdate"
     }
 }

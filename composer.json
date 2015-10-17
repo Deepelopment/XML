@@ -17,7 +17,7 @@
     "prefer-stable" : true,
     "autoload": {
         "psr-0": {"Deepelopment\\XML": "src/"}
-    }
+    },
     "scripts": {
         "pre-install-cmd": "Deepeloper\\ComposerXML::prePackageInstall"
     }

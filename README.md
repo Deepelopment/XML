@@ -4,7 +4,7 @@
 
 Add to composer.json file
 
-    ``` json
+``` json
     "repositories": [
         {
             "type": "vcs",
@@ -18,5 +18,5 @@ Add to composer.json file
         "post-install-cmd": "Deepelopment\\Composer_XML::postInstall",
         "post-update-cmd":  "Deepelopment\\Composer_XML::postUpdate"
     }
-    ```
+```
 

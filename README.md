@@ -2,7 +2,7 @@
 
 ## Installation
 
-Add to composer.json file
+Add to "composer.json" file
 
 ``` json
     "repositories": [
@@ -16,7 +16,7 @@ Add to composer.json file
     },
     "scripts": {
         "post-install-cmd": "Deepelopment\\Composer_XML::postInstall",
-        "post-update-cmd":  "Deepelopment\\Composer_XML::postUpdate"
+        "pre-update-cmd":   "Deepelopment\\Composer_XML::preUpdate"
     }
 ```
 

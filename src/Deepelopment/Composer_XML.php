@@ -19,32 +19,7 @@ use Composer\Script\Event;
 class Composer_XML
 {
     /**
-     * Pre package install script.
-     *
-     * @param  Event $event
-     * @return void
-     * @throws ErrorException
-     */
-    public static function preInstall(Event $event)
-    {
-        self::checkRequirements($event);
-    }
-
-    /**
-     * Pre package update script.
-     *
-     * @param  Event $event
-     * @return void
-     */
-    public static function preUpdate(Event $event)
-    {
-        self::checkRequirements($event);
-    }
-
-    /**
-     * Post package install script.
-     *
-     * Checks required library.
+     * Post install script.
      *
      * @param  Event $event
      * @return void
@@ -55,20 +30,18 @@ class Composer_XML
     }
 
     /**
-     * Post package update script.
-     *
-     * Checks required library.
+     * Pre update script.
      *
      * @param  Event $event
      * @return void
      */
-    public static function postUpdate(Event $event)
+    public static function preUpdate(Event $event)
     {
         self::checkRequirements($event);
     }
 
     /**
-     * Checks required library.
+     * Checks required "libxml" PHP-extension.
      *
      * @param  Event $event
      * @return void

@@ -16,7 +16,7 @@ use Composer\Script\Event;
  *
  * @package Deepelopment
  */
-class ComposerXML
+class Composer_XML
 {
     /**
      * Pre package install script.
@@ -25,7 +25,7 @@ class ComposerXML
      * @return void
      * @throws ErrorException
      */
-    public static function prePackageInstall(Event $event)
+    public static function preInstall(Event $event)
     {
         self::checkRequirements($event);
     }
@@ -36,7 +36,7 @@ class ComposerXML
      * @param  Event $event
      * @return void
      */
-    public static function prePackageUpdate(Event $event)
+    public static function preUpdate(Event $event)
     {
         self::checkRequirements($event);
     }
@@ -49,7 +49,7 @@ class ComposerXML
      * @param  Event $event
      * @return void
      */
-    public static function postPackageInstall(Event $event)
+    public static function postInstall(Event $event)
     {
         self::checkRequirements($event);
     }
@@ -62,7 +62,7 @@ class ComposerXML
      * @param  Event $event
      * @return void
      */
-    public static function postPackageUpdate(Event $event)
+    public static function postUpdate(Event $event)
     {
         self::checkRequirements($event);
     }
@@ -76,9 +76,10 @@ class ComposerXML
      */
     protected static function checkRequirements(Event $event)
     {
-        echo "checkRequirements\n";###
-        if (!function_exists('libxml_use_internal_errors123')) {
-            throw new ErrorException('"libxml" extension required!');
+        if (!function_exists('libxml_use_internal_errors')) {
+            throw new ErrorException(
+                '"deepelopment/xml" package requres "libxml" PHP-extension!'
+            );
         }
     }
 }
